@@ -1,0 +1,26 @@
+{
+  "dirname": "u3/{}",
+  "full_resource": {
+    "dirname": "u3/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    3x2\n    3x1\n  match: .*3.*\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Bolão\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5043651157688320,
+    "index": null,
+    "user": "rian.melo@ccc.ufcg.edu.br"
+  },
+  "iid": 5043651157688320,
+  "key": "5043651157688320",
+  "site": "prog1",
+  "user": "rian.melo@ccc.ufcg.edu.br"
+}

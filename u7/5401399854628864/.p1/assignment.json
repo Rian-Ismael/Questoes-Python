@@ -1,0 +1,45 @@
+{
+  "dirname": "u7/{}",
+  "full_resource": {
+    "dirname": "u7/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- type: script\n  script: python public_tests.py {}\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "category": "public",
+        "content": "import unittest\nimport sys\n\nmodule = sys.argv[-1].split(\".py\")[0]\n\nclass PublicTests(unittest.TestCase):\n\n    @classmethod\n    def setUpClass(cls):\n        global noves_fora\n        undertest = __import__(module)\n        noves_fora = getattr(undertest, 'noves_fora', None)\n\n    def test_exemplo(self):\n        assert noves_fora([4]) == (4, [[4]])\n        assert noves_fora([9]) == (0, [[9], [0]])\n        assert noves_fora([9, 9]) == (0, [[9, 9], [0]])\n        assert noves_fora([9, 7, 5, 4, 3, 1]) == (2, [[9, 7, 5, 4, 3, 1], [7, 5, 4, 3, 1], [4, 3, 3, 1], [7, 3, 1], [1, 1], [2]])\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+        "mode": "r",
+        "name": "public_tests.py"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Noves Fora\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      },
+      {
+        "_at": "2022-08-09T01:38:35Z",
+        "_author": "rian.melo@ccc.ufcg.edu.br",
+        "_ip": "2804:26d8:301:8e:db6a:ba7b:f8d5:aee9",
+        "_revision": 1,
+        "answer": true,
+        "category": "public",
+        "content": "def insere_ordenado(elemento, lista):\n    lista.append(elemento)\n    for j in range(len(lista)-1, -1, -1):\n        for i in range(len(lista)-1, -1, -1):\n            if lista[i] > lista[j]:\n                lista[i], lista[j] = lista[j], lista[i]\n\n    return lista\n\ndef noves_fora(lista):\n    #[8, 5, 2]; len = 3-1: 0, 1, 2\n    saida = [tuple(lista)]\n    if len(lista) >= 2:\n        i = 0\n        while i != (len(lista)-1):\n            if len(lista) >= 2:\n                soma = (lista[0]+lista[1])\n                if (lista[0]+lista[1]) >= 9:\n                    lista.pop(0)\n                    lista.pop(0)\n                    diferenca = (soma % (9))\n                    insere_ordenado(diferenca, lista)\n                    saida.append(tuple(lista))\n                elif (soma) < 9:\n                    lista.pop(0)\n                    lista.pop(0)\n                    insere_ordenado(soma, lista)\n                    if len(lista) > 1:\n                        saida.append(tuple(lista))\n                i += 1\n                if len(lista) < 2 and lista[0] != 0:\n                    saida.append(tuple(lista))\n\n            else:\n                break\n\n    elif len(lista) == 1 and lista[0] >= 9:\n            diferenca = (lista[0] - (9))\n            lista.pop(0)\n            insere_ordenado(diferenca, lista)\n            saida.append(tuple(lista))\n\n    saida2 = []\n    for i in range(len(saida)):\n        saida2.append(list(saida[i]))\n    \n    return lista[0], list(saida2)\n",
+        "hash": "40e4516225fdea851a8d4da1bdb49a9a4de68225",
+        "mode": "rw",
+        "name": "noves_fora.py",
+        "op": "add"
+      }
+    ],
+    "iid": 5401399854628864,
+    "index": null,
+    "user": "rian.melo@ccc.ufcg.edu.br"
+  },
+  "iid": 5401399854628864,
+  "key": "5401399854628864",
+  "site": "prog1",
+  "user": "rian.melo@ccc.ufcg.edu.br"
+}

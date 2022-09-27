@@ -1,0 +1,26 @@
+{
+  "dirname": "u1/{}",
+  "full_resource": {
+    "dirname": "u1/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    500\n  match: .*41.*8.*\n\n- input: |\n    480\n  match: .*40.*0.*\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Granja\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5503397325176832,
+    "index": null,
+    "user": "rian.melo@ccc.ufcg.edu.br"
+  },
+  "iid": 5503397325176832,
+  "key": "5503397325176832",
+  "site": "prog1",
+  "user": "rian.melo@ccc.ufcg.edu.br"
+}

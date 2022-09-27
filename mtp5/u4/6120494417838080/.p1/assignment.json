@@ -1,0 +1,26 @@
+{
+  "dirname": "u4/{}",
+  "full_resource": {
+    "dirname": "u4/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    3\n    5\n    1\n    7\n  output: |\n    5 5 5.00 5\n    1 1 3.00 5\n    7 1 4.33 7\n\n- input: |\n    2\n    3\n    7\n  output: |\n    3 3 3.00 3\n    7 3 5.00 7\n\n- input: |\n    4\n    3\n    70\n    2\n    1\n  output: |\n    3 3 3.00 3\n    70 3 36.50 70\n    2 2 25.00 70\n    1 1 19.00 70\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Mínimo, média e máximo\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 6120494417838080,
+    "index": null,
+    "user": "rian.melo@ccc.ufcg.edu.br"
+  },
+  "iid": 6120494417838080,
+  "key": "6120494417838080",
+  "site": "prog1",
+  "user": "rian.melo@ccc.ufcg.edu.br"
+}

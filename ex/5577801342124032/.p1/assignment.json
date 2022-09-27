@@ -1,0 +1,32 @@
+{
+  "dirname": "ex/{}",
+  "full_resource": {
+    "dirname": "ex/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\ndivisor = getattr(undertest, 'divisor', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        lista1 = [100,10,40,50]\n        lista2 = [3,15,50,23,5]\n        assert divisor(10, lista1) == 0\n        assert divisor(5, lista2) == 1\n        \nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+        "mode": "r",
+        "name": "public_tests.py"
+      },
+      {
+        "category": "public",
+        "content": "- type: script\n  script: python public_tests.py {}\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Divisor\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5577801342124032,
+    "index": null,
+    "user": "rian.melo@ccc.ufcg.edu.br"
+  },
+  "iid": 5577801342124032,
+  "key": "5577801342124032",
+  "site": "prog1",
+  "user": "rian.melo@ccc.ufcg.edu.br"
+}

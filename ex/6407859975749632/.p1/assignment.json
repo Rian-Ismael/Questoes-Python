@@ -1,0 +1,26 @@
+{
+  "dirname": "",
+  "full_resource": {
+    "dirname": "",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    Maria\n    Silva\n  output: |\n    Nome? Sobrenome? Nome completo: Maria Silva\n\n- input: |\n    Maria\n    da Silva Santos\n  output: |\n    Nome? Sobrenome? Nome completo: Maria da Silva Santos\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Nome Completo\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 6407859975749632,
+    "index": null,
+    "user": "rian.melo@ccc.ufcg.edu.br"
+  },
+  "iid": 6407859975749632,
+  "key": "6407859975749632",
+  "site": "prog1",
+  "user": "rian.melo@ccc.ufcg.edu.br"
+}

@@ -1,0 +1,26 @@
+{
+  "dirname": "u2/{}",
+  "full_resource": {
+    "dirname": "u2/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    50\n    2.50\n  match: .*785.398.*\n\n- input: |\n    100\n    32\n  match: .*20106.193.*\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Teste de Cooper\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5845250264268800,
+    "index": null,
+    "user": "rian.melo@ccc.ufcg.edu.br"
+  },
+  "iid": 5845250264268800,
+  "key": "5845250264268800",
+  "site": "prog1",
+  "user": "rian.melo@ccc.ufcg.edu.br"
+}

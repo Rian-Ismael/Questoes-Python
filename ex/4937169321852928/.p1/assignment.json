@@ -1,0 +1,26 @@
+{
+  "dirname": "ex/{}",
+  "full_resource": {
+    "dirname": "ex/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    3 7 4 8 12 6 4 5\n    2\n  name: exemplo 1\n  output: |\n    2 par(es)\n    4 8\n    12 6\n\n- input: |\n    5 2 3 9 27 7 2 6 4\n    3\n  name: exemplo 2\n  output: |\n    3 par(es)\n    3 9\n    9 27\n    2 6\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Pares de Múltiplos\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 4937169321852928,
+    "index": null,
+    "user": "rian.melo@ccc.ufcg.edu.br"
+  },
+  "iid": 4937169321852928,
+  "key": "4937169321852928",
+  "site": "prog1",
+  "user": "rian.melo@ccc.ufcg.edu.br"
+}

@@ -1,0 +1,32 @@
+{
+  "dirname": "ex/{}",
+  "full_resource": {
+    "dirname": "ex/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    11110101\n    fim\n  name: exemplo1\n  output: |\n    BCD inválido.\n\n- input: |\n    1111\n    fim\n  name: exemplo2\n  output: |\n    Tente novamente.\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "category": "public",
+        "content": "{\n  \"quality\": [\n    {\n      \"cc\": 6,\n      \"pep8\": 0,\n      \"lloc\": 15,\n      \"vhalstead\": 72.0,\n      \"header\": 3\n    }\n  ]\n}",
+        "mode": "r",
+        "name": "qcheck.json"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"BCD\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5167413928656896,
+    "index": null,
+    "user": "rian.melo@ccc.ufcg.edu.br"
+  },
+  "iid": 5167413928656896,
+  "key": "5167413928656896",
+  "site": "prog1",
+  "user": "rian.melo@ccc.ufcg.edu.br"
+}

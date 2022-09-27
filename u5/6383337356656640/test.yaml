@@ -1,0 +1,38 @@
+- input: |
+    ......f.....f.
+    ffffffffffffff
+    ......f.....f.
+    ..ffffffff..f.
+    ..ffffffff..f.
+    -
+  output: |
+    3 aluno(s) reprovado(s) por falta.
+
+- input: |
+    .ffffff.f...f.
+    ff........ffff
+    -
+  output: |
+    0 aluno(s) reprovado(s) por falta.
+
+- input: |
+    ......f.f...f.
+    ff........ffff
+    ......f.....f.
+    ..ffff......f.
+    ......ffff..f.
+    ..............
+    -
+  output: |
+    0 aluno(s) reprovado(s) por falta.
+
+- input: | 
+    .ffffff.f...f.
+    ff...ff...ffff
+    ....fffffff.f.
+    ..ffffffff..f.
+    ..ffffffff..f.
+    ..ffffffff....
+    -
+  output: |
+    2 aluno(s) reprovado(s) por falta.

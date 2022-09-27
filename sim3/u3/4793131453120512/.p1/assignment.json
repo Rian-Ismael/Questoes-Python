@@ -1,0 +1,26 @@
+{
+  "dirname": "u3/{}",
+  "full_resource": {
+    "dirname": "u3/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    jonas\n    jairo\n    marcos\n  output: |\n    jonas (2)\n\n- input: |\n    mateus\n    jonas\n    adriano\n  output: |\n    adriano (1)\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Seleciona um Entre Três Voluntários\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 4793131453120512,
+    "index": null,
+    "user": "rian.melo@ccc.ufcg.edu.br"
+  },
+  "iid": 4793131453120512,
+  "key": "4793131453120512",
+  "site": "prog1",
+  "user": "rian.melo@ccc.ufcg.edu.br"
+}

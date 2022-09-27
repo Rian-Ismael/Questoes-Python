@@ -1,0 +1,45 @@
+- input: |
+    pr0gl
+    Progr#m0
+  output: |
+    'r' coincidente na posição 2
+    'g' coincidente na posição 4
+    Senha não alterada
+
+- input: |
+    P1th0n
+    J0v0
+  output: |
+    Senha alterada com sucesso
+
+- input: |
+    T0sTTe
+    TeseeTT
+  output: |
+    'T' coincidente na posição 1
+    's' coincidente na posição 3
+    Senha não alterada
+
+- input: |
+    TESTE
+    TESTE
+  output: |
+    'T' coincidente na posição 1
+    'E' coincidente na posição 2
+    'S' coincidente na posição 3
+    'T' coincidente na posição 4
+    'E' coincidente na posição 5
+    Senha não alterada
+
+- input: |
+    Al5t3rA
+    0r3l5l0
+  output: |
+    Senha alterada com sucesso
+
+- input: |
+    aPe4nd
+    pooood
+  output: |
+    'd' coincidente na posição 6
+    Senha não alterada

@@ -1,0 +1,26 @@
+{
+  "dirname": "u4/{}",
+  "full_resource": {
+    "dirname": "u4/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    mandinga juazeiro cajueiro sequoia pirilampo\n  output: |\n    Quantidade de pentavogalicas: 3\n\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Pentavogalicas\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5116111148285952,
+    "index": null,
+    "user": "rian.melo@ccc.ufcg.edu.br"
+  },
+  "iid": 5116111148285952,
+  "key": "5116111148285952",
+  "site": "prog1",
+  "user": "rian.melo@ccc.ufcg.edu.br"
+}

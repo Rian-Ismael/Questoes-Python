@@ -1,0 +1,39 @@
+{
+  "dirname": "",
+  "full_resource": {
+    "dirname": "",
+    "files": [
+      {
+        "category": "public",
+        "content": "from undertst import eh_quadrado_magico\n    \ndef test_1():\n    assert eh_quadrado_magico([[2, 7, 6], [9, 5, 1], [4, 3, 8]])\n\ndef test_2():\n    assert not eh_quadrado_magico([[1, 2, 3], [4, 5, 6]])\n",
+        "mode": "r",
+        "name": "test_public.py"
+      },
+      {
+        "content": "{\n  \"ignore\": [\n    \"test_public.py\",\n    \"test_acceptance.py\"\n  ],\n  \"tests\": [],\n  \"title\": \"É Quadrado Mágico?\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      },
+      {
+        "_at": "2022-08-28T03:01:49Z",
+        "_author": "rian.melo@ccc.ufcg.edu.br",
+        "_ip": "2804:26d8:301:8e:8e91:2491:ce94:149",
+        "_revision": 2,
+        "answer": true,
+        "category": "public",
+        "content": "def sum(lista):\n    saida = 0\n    for num in lista:\n        saida += num\n    return saida\n\n\ndef eh_quadrado_magico(quadrado):\n    comparador = sum(quadrado[0])\n    saida = True\n    sum_diagonais_esquerda = 0\n    sum_diagonais_direita = 0\n    for i in range(len(quadrado)):\n        if sum(quadrado[i]) != comparador:\n            saida = False\n\n  \n        sum_colun = 0\n        for j in range(len(quadrado)):\n            sum_colun += quadrado[j][i]\n            if i == j: sum_diagonais_esquerda += quadrado[i][j]\n            if i + j == len(quadrado)-1: sum_diagonais_direita += quadrado[i][j]\n\n    if sum_diagonais_direita != comparador and sum_diagonais_esquerda != comparador:\n        saida = False\n\n        if (sum_colun != comparador):\n            saida = False\n\n\n    return saida\n",
+        "hash": "21cdfc2e503d24fdcca68fcc7812a848a23a3434",
+        "mode": "rw",
+        "name": "quadrado.py",
+        "op": "add"
+      }
+    ],
+    "iid": 4796312996282368,
+    "index": null,
+    "user": "rian.melo@ccc.ufcg.edu.br"
+  },
+  "iid": 4796312996282368,
+  "key": "4796312996282368",
+  "site": "prog1",
+  "user": "rian.melo@ccc.ufcg.edu.br"
+}

@@ -1,0 +1,26 @@
+{
+  "dirname": "u9/{}",
+  "full_resource": {
+    "dirname": "u9/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "from undertst import eh_quadrado_magico\n    \ndef test_1():\n    assert eh_quadrado_magico([[2, 7, 6], [9, 5, 1], [4, 3, 8]])\n\ndef test_2():\n    assert not eh_quadrado_magico([[1, 2, 3], [4, 5, 6]])\n",
+        "mode": "r",
+        "name": "test_public.py"
+      },
+      {
+        "content": "{\n  \"ignore\": [\n    \"test_public.py\",\n    \"test_acceptance.py\"\n  ],\n  \"tests\": [],\n  \"title\": \"É Quadrado Mágico?\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 6479477058043904,
+    "index": null,
+    "user": "rian.melo@ccc.ufcg.edu.br"
+  },
+  "iid": 6479477058043904,
+  "key": "6479477058043904",
+  "site": "prog1",
+  "user": "rian.melo@ccc.ufcg.edu.br"
+}

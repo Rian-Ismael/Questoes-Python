@@ -1,0 +1,26 @@
+{
+  "dirname": "u2/{}",
+  "full_resource": {
+    "dirname": "u2/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    520\n    5\n    3\n    0.50\n  match: .*174.*348.*R\\$.*87.00.*\n\n- input: |\n    400\n    6\n    2\n    1.75\n  match: .*200.*800.*R\\$.*350.00.*\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Álbum de Figurinhas da Copa\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 6629672420900864,
+    "index": null,
+    "user": "rian.melo@ccc.ufcg.edu.br"
+  },
+  "iid": 6629672420900864,
+  "key": "6629672420900864",
+  "site": "prog1",
+  "user": "rian.melo@ccc.ufcg.edu.br"
+}

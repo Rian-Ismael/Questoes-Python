@@ -1,0 +1,26 @@
+{
+  "dirname": "u3/{}",
+  "full_resource": {
+    "dirname": "u3/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    220\n    1500\n    220\n    1200\n    220\n    2200\n  output: |\n    condutor com maior corrente: 2\n    maior corrente: 183.33 mA\n\n- input: |\n    110\n    370000\n    110\n    220000\n    220\n    320000\n  output: |\n    condutor com maior corrente: 3\n    maior corrente: 687.50 µA\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Maior Corrente\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 6134404843831296,
+    "index": null,
+    "user": "rian.melo@ccc.ufcg.edu.br"
+  },
+  "iid": 6134404843831296,
+  "key": "6134404843831296",
+  "site": "prog1",
+  "user": "rian.melo@ccc.ufcg.edu.br"
+}

@@ -1,0 +1,6 @@
+- input: |
+    Maria
+  tokens:
+    - "Oi"
+    - "Maria"
+    - "5"

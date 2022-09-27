@@ -1,0 +1,6 @@
+nome = len(input())
+
+print("Oi Maria!")
+print(f'Seu nome tem {nome} letras.')
+
+

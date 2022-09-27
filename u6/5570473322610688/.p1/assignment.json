@@ -1,0 +1,26 @@
+{
+  "dirname": "u6/{}",
+  "full_resource": {
+    "dirname": "u6/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "from undertst import encontra_menores\n\ndef test_adicional_2():\n    assert encontra_menores(3, [2,1,1,1,1,1]) == 2\n",
+        "mode": "r",
+        "name": "test_public.py"
+      },
+      {
+        "content": "{\n  \"ignore\": [\n    \"test_acceptance.py\",\n    \"test_public.py\"\n  ],\n  \"tests\": [],\n  \"title\": \"Encontra Menores\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5570473322610688,
+    "index": null,
+    "user": "rian.melo@ccc.ufcg.edu.br"
+  },
+  "iid": 5570473322610688,
+  "key": "5570473322610688",
+  "site": "prog1",
+  "user": "rian.melo@ccc.ufcg.edu.br"
+}

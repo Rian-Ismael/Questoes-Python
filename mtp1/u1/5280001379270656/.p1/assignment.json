@@ -1,0 +1,39 @@
+{
+  "dirname": "u1/{}",
+  "full_resource": {
+    "dirname": "u1/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    Maria\n  tokens:\n    - \"Oi\"\n    - \"Maria\"\n    - \"5\"\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Letras no Nome\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      },
+      {
+        "_at": "2022-06-02T11:38:58Z",
+        "_author": "rian.melo@ccc.ufcg.edu.br",
+        "_ip": "2804:26d8:301:8e:f9e7:981d:6ef2:8103",
+        "_revision": 1,
+        "answer": true,
+        "category": "public",
+        "content": "nome = len(input())\n\nprint(\"Oi Maria!\")\nprint(f'Seu nome tem {nome} letras.')\n\n\n",
+        "hash": "ff37f35a528e3421f6618db842bca0dd1f9c28a6",
+        "mode": "rw",
+        "name": "letras.py",
+        "op": "add"
+      }
+    ],
+    "iid": 5280001379270656,
+    "index": null,
+    "user": "rian.melo@ccc.ufcg.edu.br"
+  },
+  "iid": 5280001379270656,
+  "key": "5280001379270656",
+  "site": "prog1",
+  "user": "rian.melo@ccc.ufcg.edu.br"
+}

@@ -1,0 +1,39 @@
+{
+  "dirname": "u1/{}",
+  "full_resource": {
+    "dirname": "u1/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    8.2\n    4.1\n  name: exemplo\n  output: |\n    16.81\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Área Tiângulo\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      },
+      {
+        "_at": "2022-05-26T11:47:47Z",
+        "_author": "rian.melo@ccc.ufcg.edu.br",
+        "_ip": "2804:26d8:301:8e:4504:a587:795f:6102",
+        "_revision": 1,
+        "answer": true,
+        "category": "public",
+        "content": "base = float(input())\naltura = float(input())\n\narea = (base * altura) / 2\n\nprint(f'{area:.2f}')\n",
+        "hash": "8482ed705329ed7a1ca8a871d38cff1d17036be5",
+        "mode": "rw",
+        "name": "area.py",
+        "op": "add"
+      }
+    ],
+    "iid": 5314036310736896,
+    "index": null,
+    "user": "rian.melo@ccc.ufcg.edu.br"
+  },
+  "iid": 5314036310736896,
+  "key": "5314036310736896",
+  "site": "prog1",
+  "user": "rian.melo@ccc.ufcg.edu.br"
+}

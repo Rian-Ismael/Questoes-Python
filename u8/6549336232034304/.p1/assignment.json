@@ -1,0 +1,45 @@
+{
+  "dirname": "u8/{}",
+  "full_resource": {
+    "dirname": "u8/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- type: script\n  script: python public_tests.py {}\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "category": "public",
+        "content": "import unittest\nimport sys\n\nmodule = sys.argv[-1].split(\".py\")[0]\n\nclass AcceptanceTests(unittest.TestCase):\n\n    @classmethod\n    def setUpClass(cls):\n        global idosos_inicio\n        undertest = __import__(module)\n        idosos_inicio = getattr(undertest, 'idosos_inicio', None)\n\n    def test_exemplo(self):\n        fila = [25, 33, 67, 61, 35, 8, 12, 15, 22, 63, 75, 30, 34]\n        self.assertEqual( idosos_inicio(fila), None )\n        self.assertEqual( fila, [67, 61, 63, 75, 35, 8, 12, 15, 22, 25, 33, 30, 34])\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+        "mode": "r",
+        "name": "public_tests.py"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Mais Velhos Primeiro\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      },
+      {
+        "_at": "2022-08-06T13:39:20Z",
+        "_author": "rian.melo@ccc.ufcg.edu.br",
+        "_ip": "2804:26d8:301:8e:4b1c:160e:8871:43bf",
+        "_revision": 1,
+        "answer": true,
+        "category": "public",
+        "content": "def idosos_inicio(fila):\n    start = 0\n    for i in range(len(fila)):\n        for j in range(start, len(fila)):\n            if fila[i] >= 60:\n                if fila[i] > fila[j]:\n                    fila[j], fila[i] = fila[i], fila[j]\n                    start += 1\n\n    return fila\n\n\nfila = [25, 33, 67, 61, 35, 8, 12, 15, 22, 63, 75, 30, 34]\nassert fila == [67, 61, 63, 75, 35, 8, 12, 15, 22, 25, 33, 30, 34]\n",
+        "hash": "37e4dc1334e178bd8b86efdb2dc00f610f008977",
+        "mode": "rw",
+        "name": "primeiros.py",
+        "op": "add"
+      }
+    ],
+    "iid": 6549336232034304,
+    "index": null,
+    "user": "rian.melo@ccc.ufcg.edu.br"
+  },
+  "iid": 6549336232034304,
+  "key": "6549336232034304",
+  "site": "prog1",
+  "user": "rian.melo@ccc.ufcg.edu.br"
+}

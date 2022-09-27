@@ -1,0 +1,6 @@
+- input: |
+    65
+    4
+  output: |
+    Cada herdeiro deverá receber 16 hectare(s).
+    1 hectare(s) para doação.

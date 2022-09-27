@@ -1,0 +1,26 @@
+{
+  "dirname": "",
+  "full_resource": {
+    "dirname": "",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    35\n    65\n    -20\n  output: |\n    *\n\n- input: |\n    10\n    30\n    50\n  output: |\n    90\n\n- input: |\n    -30\n    10\n    20\n  output: |\n    0\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Soma 100\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 4717071105523712,
+    "index": null,
+    "user": "rian.melo@ccc.ufcg.edu.br"
+  },
+  "iid": 4717071105523712,
+  "key": "4717071105523712",
+  "site": "prog1",
+  "user": "rian.melo@ccc.ufcg.edu.br"
+}

@@ -1,0 +1,44 @@
+{
+  "dirname": "u5/{}",
+  "full_resource": {
+    "dirname": "u5/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "import sys\nimport os\n\nfilename = \"dados.dat\"\nif not os.path.exists(filename):\n    print(\"O arquivo de dados (dados.dat) não existe\")\n    print(\"Execute: python3 gendata.py pra gerar o arquivo\")\n    sys.exit(1)\n\narq = open(filename)\nlinhas = arq.readlines()\ni = 1\nfor linha in linhas:\n    num = int(linha)\n    if num < 100: break\n    i += 1\n\nprint(f\"{num}, na posição {i}\")\n",
+        "mode": "ro",
+        "name": "menor100.py"
+      },
+      {
+        "category": "public",
+        "content": "- type: script\n  script: python3 ./usa_while.py {}\n\n- output: |\n    69, na posição 1700020\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "category": "public",
+        "content": "import sys\nimport random\n\nif len(sys.argv) < 2:\n    print(\"uso: python3 datagen.py <seed>\")\n    sys.exit(1)\n\nrandom.seed(int(sys.argv[1]))\narq = open(\"dados.dat\", mode=\"w\")\nnum = 100_000_000\nfor i in range(num):\n    arq.write(f\"{random.randint(0, 1000000000)}\\n\")\n",
+        "mode": "ro",
+        "name": "datagen.py"
+      },
+      {
+        "category": "public",
+        "content": "#!/bin/env python3\nimport sys\nimport ast\n\ntree = ast.parse(open(sys.argv[1]).read())\ntokens = set([type(tk) for tk in ast.walk(tree)])\nsummary = \".\" if ast.While in tokens else \"W\"\nprint(summary)\n",
+        "mode": "ro",
+        "name": "usa_while.py"
+      },
+      {
+        "content": "{\n  \"ignore\": [\n    \"datagen.py\",\n    \"usa_while.py\"\n  ],\n  \"tests\": [],\n  \"title\": \"Primeiro menor que 100\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 4873662995890176,
+    "index": null,
+    "user": "rian.melo@ccc.ufcg.edu.br"
+  },
+  "iid": 4873662995890176,
+  "key": "4873662995890176",
+  "site": "prog1",
+  "user": "rian.melo@ccc.ufcg.edu.br"
+}

@@ -1,0 +1,26 @@
+{
+  "dirname": "u3/{}",
+  "full_resource": {
+    "dirname": "u3/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    segunda 15\n  output: |\n    fraco\n\n- input: |\n    terça 50\n  output: |\n    atípico\n\n- input: |\n    sábado 70\n  output: |\n    normal\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Dia Normal\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 6392941088079872,
+    "index": null,
+    "user": "rian.melo@ccc.ufcg.edu.br"
+  },
+  "iid": 6392941088079872,
+  "key": "6392941088079872",
+  "site": "prog1",
+  "user": "rian.melo@ccc.ufcg.edu.br"
+}

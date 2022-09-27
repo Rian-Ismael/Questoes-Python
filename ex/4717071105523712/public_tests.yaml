@@ -1,0 +1,20 @@
+- input: |
+    35
+    65
+    -20
+  output: |
+    *
+
+- input: |
+    10
+    30
+    50
+  output: |
+    90
+
+- input: |
+    -30
+    10
+    20
+  output: |
+    0

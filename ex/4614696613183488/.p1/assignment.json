@@ -1,0 +1,26 @@
+{
+  "dirname": "ex/{}",
+  "full_resource": {
+    "dirname": "ex/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    Matheus Gaudencio do Rego\n    Eliane Araujo\n    Dalton Serey Guerrero\n    fim\n  output: |\n    Matheus Gaudencio do Rego: matheusgr\n    Eliane Araujo: elianea\n    Dalton Serey Guerrero: daltonsg\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Cria Login\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 4614696613183488,
+    "index": null,
+    "user": "rian.melo@ccc.ufcg.edu.br"
+  },
+  "iid": 4614696613183488,
+  "key": "4614696613183488",
+  "site": "prog1",
+  "user": "rian.melo@ccc.ufcg.edu.br"
+}

@@ -1,0 +1,26 @@
+{
+  "dirname": "",
+  "full_resource": {
+    "dirname": "",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    65\n    4\n  output: |\n    Cada herdeiro deverá receber 16 hectare(s).\n    1 hectare(s) para doação.\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Herança\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 6743231507202048,
+    "index": null,
+    "user": "rian.melo@ccc.ufcg.edu.br"
+  },
+  "iid": 6743231507202048,
+  "key": "6743231507202048",
+  "site": "prog1",
+  "user": "rian.melo@ccc.ufcg.edu.br"
+}

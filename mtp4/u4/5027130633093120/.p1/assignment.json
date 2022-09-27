@@ -1,0 +1,26 @@
+{
+  "dirname": "u4/{}",
+  "full_resource": {
+    "dirname": "u4/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    dado empresa tatu\n  output: |\n    em ordem\n\n- input: |\n    casa dado abacate tatu\n  output: |\n    fora de ordem: 3\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Fora de Ordem\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5027130633093120,
+    "index": null,
+    "user": "rian.melo@ccc.ufcg.edu.br"
+  },
+  "iid": 5027130633093120,
+  "key": "5027130633093120",
+  "site": "prog1",
+  "user": "rian.melo@ccc.ufcg.edu.br"
+}

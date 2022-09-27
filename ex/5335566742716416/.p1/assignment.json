@@ -1,0 +1,32 @@
+{
+  "dirname": "ex/{}",
+  "full_resource": {
+    "dirname": "ex/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- type: script\n  script: python public_tests.py {}\n\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "category": "public",
+        "content": "import unittest\nimport sys\n\nundertest = __import__(sys.argv[-1].split(\".py\")[0])\nacordes = getattr(undertest, 'acordes', None)\n\nclass PublicTests(unittest.TestCase):\n\n    def test_exemplo(self):\n        m1 = ['c', 'd', 'dm']\n        m2 = ['c', 'a']\n        \n        assert acordes(m1, m2) == ['c', 'd', 'dm', 'a']\n        assert m1 == ['c', 'd', 'dm']\n        assert m2 == ['c', 'a']\n        \n        m1 = ['c', 'd']\n        m2 = ['c', 'a']\n        assert acordes(m1, m2) == ['c', 'd', 'a']\n\n\nif __name__ == '__main__':\n    loader = unittest.TestLoader()\n    runner = unittest.TextTestRunner()\n    runner.run(loader.loadTestsFromModule(sys.modules[__name__]))\n",
+        "mode": "r",
+        "name": "public_tests.py"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Acordes Aprendidos\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 5335566742716416,
+    "index": null,
+    "user": "rian.melo@ccc.ufcg.edu.br"
+  },
+  "iid": 5335566742716416,
+  "key": "5335566742716416",
+  "site": "prog1",
+  "user": "rian.melo@ccc.ufcg.edu.br"
+}

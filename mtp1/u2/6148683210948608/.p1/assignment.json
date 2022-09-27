@@ -1,0 +1,26 @@
+{
+  "dirname": "u2/{}",
+  "full_resource": {
+    "dirname": "u2/{}",
+    "files": [
+      {
+        "category": "public",
+        "content": "- input: |\n    100\n  output: |\n    17 engradado(s) para armazenar o estoque.\n",
+        "mode": "ro",
+        "name": "public_tests.yaml"
+      },
+      {
+        "content": "{\n  \"tests\": [],\n  \"title\": \"Engradado de Refrigerante\"\n}",
+        "mode": "r",
+        "name": "tst.json"
+      }
+    ],
+    "iid": 6148683210948608,
+    "index": null,
+    "user": "rian.melo@ccc.ufcg.edu.br"
+  },
+  "iid": 6148683210948608,
+  "key": "6148683210948608",
+  "site": "prog1",
+  "user": "rian.melo@ccc.ufcg.edu.br"
+}
