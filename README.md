@@ -1,2 +1,2 @@
-# Questoes-Python
-Questões realizadas durante o período 2021.2 na disciplina de P1/LP1
+# Questions-Python
+Questions done during the period 2021.2 in the subject of P1/LP1
